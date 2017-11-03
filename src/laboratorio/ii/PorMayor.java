@@ -4,9 +4,9 @@ package laboratorio.ii;
  */
 public class PorMayor extends Ventas {
     private String nombreCliente; 
-    
-    public PorMayor(String fecha, Producto producto, double precio, String nombreCliente) {
-        super(fecha, producto, precio);
+
+    public PorMayor(String nombreCliente, String fecha, Producto producto, double precio, int cantidadProducto) {
+        super(fecha, producto, precio, cantidadProducto);
         this.nombreCliente = nombreCliente;
     }
 }
