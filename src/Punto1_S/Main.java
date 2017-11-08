@@ -1,4 +1,7 @@
 package Punto1_S;
+
+import javax.swing.JOptionPane;
+
 /**
  * @autores Aldo J Márquez, Mateo Pacheco, Luis Suárez, Juan E Muñoz
  */
@@ -13,5 +16,6 @@ public class Main {
         b.inventario.mostrarInventario();
         
         System.out.println("Lol");
+        JOptionPane.showMessageDialog(null, "lol", "fakiu", 1);
     }
 }
