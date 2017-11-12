@@ -15,7 +15,7 @@ public class Main {
         b.inventario.sirve();
         b.inventario.mostrarInventario();
         
-        System.out.println("Lol");
-        JOptionPane.showMessageDialog(null, "lol", "fakiu", 1);
+        System.out.println("asdasdasdasd");
+        JOptionPane.showMessageDialog(null, "asdasd", "asd", 1);
     }
 }
