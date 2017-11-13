@@ -10,13 +10,37 @@ public class Inventario {
     public Inventario(){
         this.productos = new TreeMap();
     }
+
+    public TreeMap<String, Producto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(TreeMap<String, Producto> productos) {
+        this.productos = productos;
+    }
+    
+    
     
     public void crearProducto(String nombre, double precioC, double precioV, int cantidad){
         Producto c = new Producto(nombre, precioC, precioV, cantidad);
-        productos.put(c.getNombre(), c);
+        this.productos.put(c.getNombre(), c);
     }
     
-    public void borrarProducto(Producto producto){
-        productos.remove(producto.getNombre());
+    public void borrarProducto(String nombreProducto){
+        this.productos.remove(nombreProducto);
+        System.gc();
     }
+    
+    public void cambiarPrecioC(String nombreProducto, int precio){
+        Producto p = this.productos.get(nombreProducto);
+        p.setPrecioC(precio);
+    }
+    
+    public void cambiarPrecioV(String nombreProducto, int precio){
+        Producto p = this.productos.get(nombreProducto);
+        p.setPrecioV(precio);
+    }
+
+    
+    
 }
